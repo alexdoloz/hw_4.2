@@ -22,17 +22,17 @@
 <body>
     <div class="container">
 
-        <div class="panel panel-default">
+        <main-menu></main-menu>
+        <!-- <div class="panel panel-default">
             <div class="panel-body">
-
+        
                 <div class="btn-group" role="group">
                     <a class="btn btn-default" data-ui-sref="list">Список</a>
                     <a class="btn btn-default" data-ui-sref="createNewPokemon">Добавить нового</a>
                 </div>
-
+        
             </div>
-        </div>
-
+        </div> -->
         <shopping-cart-component></shopping-cart-component>
 
         <ui-view></ui-view>
@@ -44,6 +44,7 @@
     <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
+    
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -57,9 +58,10 @@
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
-
+    
     <script src="ShoppingCartStore/ShoppingCartStore.js"></script>
     <script src="ShoppingCartComponent/ShoppingCartComponent.js"></script>
+    <script src="MainMenu/MainMenu.js"></script>
 </body>
 
 </html>

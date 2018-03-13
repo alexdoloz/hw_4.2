@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+
+        <div class="btn-group" role="group" >
+            <a ng-repeat="menuItem in menuItems" class="btn {{ classForItem($index) }}" data-ui-sref="{{ menuItem.sref }}" ng-click="menuItemClicked($index)">{{menuItem.name}}</a>
+        </div>
+
+    </div>
+</div>
